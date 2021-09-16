@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKING</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-center font-bold text-6xl mt-16"> <span class="text-blue-500">DEPOSIT AND WITHDRAW</span> ANYTIME</h1>
+    </header>
+    <main>
+        <section>
+            <div class=" flex mt-16">
+                <div class="bg-blue-100 w-1/6 h-24 flex-1 m-4 rounded-md text-center p-3">
+                    <h1 class="font-bold text-4xl text-blue-500 ">Deposit</h1>
+                    <h1  class="text-3xl">$<span  id="deposit"> 00</span></h1>
+                </div>
+                <div class="bg-blue-100 w-1/6 h-24 flex-1 m-4 rounded-md text-center p-3">
+                    <h1 class="font-bold text-4xl text-blue-500 ">Withdraw</h1>
+                    <h1 class="text-3xl">$ <span id="withdraw">00</span> </h1>
+                </div>
+                <div class="bg-blue-100 w-1/6 h-24 flex-1 m-4 rounded-md text-center p-3  p-3">
+                    <h1 class="font-bold text-4xl text-blue-500 ">Balance</h1>
+                    <h1 class="text-3xl">$ <span id="balance">1000</span></h1>
+                </div>
+            </div>
+        </section>
+        <!-- diposit and Withdraw -->
+        <section class="mt-16">
+            <div class="flex">
+                <div class="bg-purple-200 w-1/6 h-24 flex-1 m-4 rounded-md text-center p-1">
+                    <h1 class="font-bold text-3xl text-blue-700 ">Deposit Amount</h1>
+                    <input id="deposit-amount" class="mb-4 p-2 rounded-md border-2 border-green-300 "  type="text" value="" placeholder="Enter amount">
+                    <button id="btn-1" class="p-2 m-2 bg-blue-500 font-bold rounded-lg border-3 focus:bg-white">Deposit </button>
+                </div>
+                <div class="bg-purple-200 w-1/6 h-24 flex-1 m-4 rounded-md text-center p-1 ">
+                    <h1 class="font-bold text-3xl text-blue-700 ">Withdraw Amount </h1>
+                    <input id="withdraw-amount" class="mb-4 p-2 rounded-md border-2 border-green-300 "  type="text" value="" placeholder="Enter amount">
+                    <button id="btn-2" class="p-2 m-2 bg-blue-500 font-bold rounded-lg border-3 focus:bg-white">Withdraw</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="banking.js"></script>
+</body>
+</html>
